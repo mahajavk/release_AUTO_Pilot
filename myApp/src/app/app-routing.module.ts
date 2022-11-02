@@ -1,36 +1,28 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import{ AddVehiclesComponent } from './add-vehicles/add-vehicles.component'
-import {AddCustomerComponent} from './add-customer/add-customer.component'
-import {DisplayCustomerComponent} from './display-customer/display-customer.component'
-import{VehicleCustomersComponent} from './vehicle-customers/vehicle-customers.component'
+import{ ContactUSComponent } from './ContactUS/ContactUS.component'
+import {AboutComponent} from './About/About.component'
 import { BrowserModule } from '@angular/platform-browser';
 import {HomeComponent} from './home/home.component'
+import { ProcessComponent } from './Process/Process.component';
 const routes: Routes = [
+  {path: '',pathMatch:'full',redirectTo:'home'},
   {
     component:HomeComponent,
     path:"home"
   },
   {
-    component:AddVehiclesComponent,
-    path:"addVehicle"
+    component:AboutComponent,
+    path:"about"
+  },
+  {
+    component:ProcessComponent,
+    path:"process"
   },
 {
-  component:AddCustomerComponent,
-  path:"addCustomer"
+  component:ContactUSComponent,
+  path:"contact"
 },
-{
-  component:DisplayCustomerComponent,
-  path:"displayCustomer"
-},
-{
-  component:DisplayCustomerComponent,
-  path:"displayCustomer"
-},
-{
-  component:VehicleCustomersComponent,
-  path:"sale"
-}
 ];
 
 @NgModule({

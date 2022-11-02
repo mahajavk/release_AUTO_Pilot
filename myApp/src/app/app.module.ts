@@ -3,21 +3,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AddVehiclesComponent } from './add-vehicles/add-vehicles.component';
-import { AddCustomerComponent } from './add-customer/add-customer.component';
-import { DisplayCustomerComponent } from './display-customer/display-customer.component';
+import { AboutComponent } from './About/About.component';
+import { ProcessComponent } from './Process/Process.component';
 import { HomeComponent } from './home/home.component';
-import { VehicleCustomersComponent } from './vehicle-customers/vehicle-customers.component';
+import { ContactUSComponent } from './ContactUS/ContactUS.component';
 import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AddVehiclesComponent,
-    AddCustomerComponent,
-    DisplayCustomerComponent,
-    HomeComponent,
-    VehicleCustomersComponent
+    AboutComponent,
+    ProcessComponent,
+    ContactUSComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
